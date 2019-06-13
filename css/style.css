@@ -1,0 +1,312 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+.clear {
+  clear:both;
+}
+
+#dLabel{
+  font-size: 11pt;
+}
+
+body {
+  color: #444;
+  background-color: #aaa;
+  font-family: 'Exo 2', sans-serif !important;
+  margin-bottom: 40px;
+}
+
+header{
+  margin-bottom:75px;
+}
+
+#card-features, #card-pricing{
+  display: none;
+}
+
+#card-container{
+  -webkit-animation-duration: 2.9s; 
+  animation-duration: 2.9s;
+}
+
+.card-main{
+  -webkit-animation-duration: 2.9s; 
+  animation-duration: 2.9s;
+}
+
+.card{
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+  border: transparent;
+}
+
+.strip-template{
+  position:relative;
+  width: 100%;
+  padding: 50px 0 80px 0;
+}
+
+#webportfolio{
+  background: rgba(0,0,0,0.7);
+  color: #eee;
+  padding-top:30px;
+}
+
+#webportfolio p{
+  color: #bbb;
+}
+
+#navtriangle {
+  width: 100%;
+  height: 0;
+  border-top: 75px solid rgba(0,0,0,0.7);
+  border-right: 100vw solid transparent;
+}
+
+#triangle {
+  width: 100%;
+  height: 0;
+  border-bottom: 75px solid rgba(0,0,0,0.7);
+  border-left: 100vw solid transparent;
+}
+
+.card-template {
+  box-shadow: 0px 5px 5px #888;
+  border-radius: 2px;
+  -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  -webkit-filter: grayscale(75%)
+}
+
+.card-template:hover {
+  box-shadow: 0px 5px 15px #222;
+  margin-top: -2px;
+  margin-bottom: 2px;
+  -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  -webkit-filter: grayscale(0%)
+}
+
+#scrollspy-body{
+	position: relative;
+}
+
+#sec-nav{
+	position: fixed;
+}
+
+.top-row {
+	margin-top: 30px !important;
+}
+
+p{
+	margin-left: 0px !important;
+	line-height: 23px;
+}
+
+li{
+	line-height: 23px;
+	font-weight: 400;
+  list-style: none;
+}
+
+.text-left>ul{
+	padding-left: 20px !important;
+}
+
+.text-left{
+	text-align: left !important;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar{
+  background-color: #aaa;
+  border: none !important;
+ margin-bottom: 15px;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0px !important;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-nav.navbar-right:last-child{
+	margin-right: 0px !important;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li:hover{
+	background-color: #777;
+}
+
+.dropdown-menu{
+	border-radius: 0px !important;
+	background-color: rgba(0,0,0,0.7) !important;
+	width: 334px !important;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+	background-color: #777 !important;
+}
+
+.dropdown-menu li a{
+	color: white;
+}
+#linkedin:hover{
+  background-color: #007bb6;
+}
+
+#pinterest:hover{
+  background-color: #bd081c;
+}
+
+.navbar-toggle
+{
+  float:left;
+}
+
+#resp-icons{
+  float:right;
+  margin: 0 0;
+}
+
+#resp-icons>li{
+  display:inline-block !important;
+  padding: 4px 0;
+}
+
+#resp-link{
+  display:none;
+}
+
+/* CV
+-------------*/
+#cv{
+  position: absolute;
+  height: 400px;
+  width: 100px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+hr{
+  border-top: 1px solid #ccc;
+}
+
+.featurette-divider {
+  margin: 30px 0px; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-divider2 {
+  margin: 0px 0px; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 767px) {
+  #nav-icons{
+  display:none;
+}
+#resp-link{
+  display:block;
+}
+
+#dLabel{
+  display:none;
+}
+
+}
+
+@media (min-width: 768px) {
+  #resp-icons{
+  display:none;
+}
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 70px;
+  }
+}
